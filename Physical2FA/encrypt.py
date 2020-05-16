@@ -51,4 +51,5 @@ def encrypt(key):
             else:
                 print(directorys.append(array[i]))
         print(f"files: {filess} \n dir: {directorys}")
+        
 
