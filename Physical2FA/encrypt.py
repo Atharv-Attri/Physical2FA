@@ -17,7 +17,7 @@ for i in range(0, len(array)):
     else:
         print(directory.append(array[i]))
 for f in directory:
-    if f.startswith('.'):
+    if f.startswith('.') or f == "__pycache__":
         directory.remove(f)
         print("one file removed")
 def backencrypt(filename, key):
