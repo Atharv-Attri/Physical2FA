@@ -29,7 +29,7 @@ def backencrypt(filename, key):
     except FileNotFoundError:
         print(
             f'There is no file named {filename}\n please make sure that the file exists and that you are including the file extention.')
-        exit(1)
+        pass
     # encrypt data
     encrypted_data = f.encrypt(file_data)
     # write the encrypted file
@@ -50,6 +50,7 @@ def encrypt(key):
                 filess.append(array[i])
             else:
                 print(directorys.append(array[i]))
-        print(f"files: {filess} \n dir: {directorys}")
-        
+        encrypt(load_key.open_key())
 
+
+encrypt(load_key.open_key())
