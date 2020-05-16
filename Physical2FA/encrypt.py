@@ -14,6 +14,8 @@ print(array)
 for i in range(0, len(array)):
     if os.path.isfile(array[i]):
         files.append(array[i])
+        if array[i] == "encrypt.py":
+            array.remove("encrypt.py")
     else:
         print(directory.append(array[i]))
 for f in directory:
