@@ -48,11 +48,13 @@ while 1 < 100:
         directory = []
     
         print(array)
-        for i in range(0, len(array)):
-            if os.path.isfile(array[i]):
-                files.append(array[i])
+        for i in array:
+            if os.path.isfile(i):
+                files.append(i)
+                if i == "encrypt.py":
+                    array.remove("encrypt.py")
             else:
-                print(directory.append(array[i]))
+                print(directory.append(i))
         for f in directory:
             if f.startswith('.'):
                 directory.remove(f)
