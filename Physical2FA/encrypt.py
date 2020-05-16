@@ -1,6 +1,11 @@
 from cryptography.fernet import Fernet
 import os
-array = os.listdir()
+import sys
+path = "./"
+array = os.listdir(path)
+if input(f"you will encrypt the following files: {array}. Are you sure you want to continue? y/n: ") =="y":
+    pass
+else:sys.exit("User raised exception")
 files = []
 directory = []
 print(array)
