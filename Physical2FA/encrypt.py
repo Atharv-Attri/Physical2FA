@@ -1,6 +1,7 @@
 from cryptography.fernet import Fernet
 import os
 import sys
+import load_key
 path = "./"
 array = os.listdir(path)
 if input(f"you will encrypt the following files: {array}. Are you sure you want to continue? y/n: ") =="y":
@@ -8,9 +9,46 @@ if input(f"you will encrypt the following files: {array}. Are you sure you want 
 else:sys.exit("User raised exception")
 files = []
 directory = []
+
 print(array)
 for i in range(0, len(array)):
     if os.path.isfile(array[i]):
         files.append(array[i])
     else:
         print(directory.append(array[i]))
+for f in directory:
+    if f.startswith('.'):
+        directory.remove(f)
+        print("one file removed")
+def backencrypt(filename, key):
+    f = Fernet(key)
+    try:
+        with open(filename, "rb") as file:
+            # read all file data
+            file_data = file.read()
+    except FileNotFoundError:
+        print(
+            f'There is no file named {filename}\n please make sure that the file exists and that you are including the file extention.')
+        exit(1)
+    # encrypt data
+    encrypted_data = f.encrypt(file_data)
+    # write the encrypted file
+    with open(filename, "wb") as file:
+        file.write(encrypted_data)
+def encrypt(key):
+    for i in files:
+        backencrypt(i, key)
+
+
+for g in directory:
+    array = os.listdir(g)
+    print("array!!!!!11111" ,array)
+    filesd = []
+    directoryd = []
+    for i in range(0, len(array)):
+        if os.path.isfile(array[i]):
+            filesd.append(array[i])
+        else:
+            print(directoryd.append(array[i]))
+    print(f"files: {filesd} \n dir: {directoryd}")
+
