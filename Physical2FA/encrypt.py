@@ -2,6 +2,8 @@ from cryptography.fernet import Fernet
 import os
 import sys
 import load_key
+orignialdir = os.getcwd()
+print(orignialdir)
 path = "./"
 array = os.listdir(path)
 if input(f"you will encrypt the following files: {array}. Are you sure you want to continue? y/n: ") =="y":
@@ -29,7 +31,7 @@ def backencrypt(filename, key):
     except FileNotFoundError:
         print(
             f'There is no file named {filename}\n please make sure that the file exists and that you are including the file extention.')
-        pass
+        exit(1)
     # encrypt data
     encrypted_data = f.encrypt(file_data)
     # write the encrypted file
@@ -51,6 +53,7 @@ def encrypt(key):
             else:
                 print(directorys.append(array[i]))
         encrypt(load_key.open_key())
+        os.chdir(orignialdir)
 
 
 encrypt(load_key.open_key())
