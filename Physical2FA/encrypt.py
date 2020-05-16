@@ -2,8 +2,6 @@ from cryptography.fernet import Fernet
 import os
 import sys
 import load_key
-orignialdir = os.getcwd()
-print(orignialdir)
 path = "./"
 array = os.listdir(path)
 if input(f"you will encrypt the following files: {array}. Are you sure you want to continue? y/n: ") =="y":
@@ -19,10 +17,10 @@ for i in range(0, len(array)):
     else:
         print(directory.append(array[i]))
 for f in directory:
-    if f.startswith('.') or f == "__pycache__" or f == "encrypt.py":
+    if f.startswith('.'):
         directory.remove(f)
         print("one file removed")
-def backencrypt(filename, key):
+def encrypt(filename, key):
     f = Fernet(key)
     try:
         with open(filename, "rb") as file:
@@ -37,23 +35,28 @@ def backencrypt(filename, key):
     # write the encrypted file
     with open(filename, "wb") as file:
         file.write(encrypted_data)
-def encrypt(key):
+
+for i in files:
+    encrypt(i, load_key.open_key())
+
+for i in directory:
+    os.chdir(i)
+    array = os.listdir()
+    files = []
+    directory = []
+
+    print(array)
+    for i in range(0, len(array)):
+        if os.path.isfile(array[i]):
+            files.append(array[i])
+        else:
+            print(directory.append(array[i]))
+    for f in directory:
+        if f.startswith('.'):
+            directory.remove(f)
+            print("one file removed")
+    print(files)
+    print(directory)
     for i in files:
-        backencrypt(i, key)
+        encrypt(i, load_key.open_key())
     
-    for g in directory:
-        os.chdir(g)
-        array = os.listdir()
-        print("array!!!!!11111" ,array)
-        filess = []
-        directorys = []
-        for i in range(0, len(array)):
-            if os.path.isfile(array[i]):
-                filess.append(array[i])
-            else:
-                print(directorys.append(array[i]))
-        encrypt(load_key.open_key())
-        os.chdir(orignialdir)
-
-
-encrypt(load_key.open_key())
