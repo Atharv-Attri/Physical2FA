@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Physical2FA",  # Replace with your own username
-    version="0.0.a12",
+    version="0.0.a13",
     author="Atharv2",
     author_email="atharv260107@gmail.com",
     description="Alpha version",
