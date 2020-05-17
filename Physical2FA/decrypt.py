@@ -112,6 +112,8 @@ for i in directory:
             print(files)
             print(directory)
         #NEXT
+            for l in files:
+                decrypt(l, pubkey)
             for l in directory:
                 os.chdir(l)
                 array = os.listdir()
