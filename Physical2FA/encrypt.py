@@ -1,8 +1,8 @@
 from cryptography.fernet import Fernet
 import os
 import sys
-import load_key
 path = "./"
+pubkey = open("D:\key.key", "rb").read()
 array = os.listdir(path)
 if input(f"you will encrypt the following files: {array}. Are you sure you want to continue? y/n: ") =="y":
     pass
@@ -14,12 +14,12 @@ print(array)
 for i in range(0, len(array)):
     if os.path.isfile(array[i]):
         files.append(array[i])
-        if array[i] == "encrypt.py":
-            array.remove("encrypt.py")
+        if array[i] == "lock.py":
+            array.remove("lock.py")
     else:
         print(directory.append(array[i]))
 for f in directory:
-    if f.startswith('.'):
+    if f.startswith('.') or f.startswith("_"):
         directory.remove(f)
         print("one file removed")
 def encrypt(filename, key):
@@ -39,7 +39,7 @@ def encrypt(filename, key):
         file.write(encrypted_data)
 
 for i in files:
-    encrypt(i, load_key.open_key())
+    encrypt(i, pubkey)
 while 1 < 100:
     for i in directory:
         os.chdir(i)
@@ -62,7 +62,7 @@ while 1 < 100:
         print(files)
         print(directory)
         for i in files:
-            encrypt(i, load_key.open_key())
+            encrypt(i, pubkey)
         
         for i in directory:
             os.chdir(i)
