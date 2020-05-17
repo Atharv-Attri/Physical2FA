@@ -11,12 +11,14 @@ else:
 files = []
 directory = []
 
+
 print(array)
 for i in range(0, (len(array)-1)):
     if os.path.isfile(array[i]):
         files.append(array[i])
         if array[i] == "lock.py":
             array.remove("lock.py")
+            files.remove("lock.py")
     else:
         print(directory.append(array[i]))
 for f in directory:
