@@ -68,3 +68,6 @@ You can download the file called fail_safe.py from https://github.com/Atharv2/Ph
 + Take very good care of your external drive. Physical2FA uses a fernet encryption, and there is no way to recover your key if you lose it. Your key is not stored anywhere other than your drive, so if I were you, I would keep a copy of the key on the cloud. 
 + There is a file on https://github.com/Atharv2/Physical2FA called fail_safe.py which will allow you to encrypt or decrypt single files that the regular program may not have encrypted or decrypted. You will still need your external drive plugged in.
 + I highly recommend that you do not use this to encrypt any important files, although the chances are slim, you may still ruin the files. You can still try to recover it using fail_safe.py, but that is also not a garuntee. 
+
+### Disclaimer
+This software does not come with a warranty. I am not responsable if you encrypt some important files and then can't decrypt them. The chances of this happening is very slim, but you should still exercise caution while using this software. I will not be held responsable for any damage that occures from using this software. If you use this program, you understand that You are using it on your own will and you understand the risks. 
