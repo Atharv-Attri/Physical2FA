@@ -16,6 +16,10 @@
  It's as easy as that!
  
  #### First time run
+ Make sure that you also have cryptography installed. You can install it using 
+ ```python
+ pip install cryptography
+ ```
  When you first run the program, you will need to create a key. You can do this by running
  
  ```Python
@@ -51,9 +55,13 @@ from Physical2FA import decrypt
 
 decrypt
 ```
+#### Using the fail_safe
+You can download the file called fail_safe.py from https://github.com/Atharv2/Physical2FA. It will guide you through encrypting or decrypting your files one at a time.
 
 ### Very Important Things that you should go through or else you will most likely lose your files!
 ##### The following lines are a matter of life or death for your files. (No pressure).
 + Make sure that your file is named 'lock.py'. Case does matter! If you don't you will get half decrypted files when you try to decrypt.
 + Make sure that your external drive is the letter 'D'. If it does not, go change it. 
 + Take very good care of your external drive. Physical2FA uses a fernet encryption, and there is no way to recover your key if you lose it. Your key is not stored anywhere other than your drive, so if I were you, I would keep a copy of the key on the cloud. 
++ There is a file on https://github.com/Atharv2/Physical2FA called fail_safe.py which will allow you to encrypt or decrypt single files that the regular program may not have encrypted or decrypted. You will still need your external drive plugged in.
++I highly recommend that you do not use this to encrypt any important files, although the chances are slim, you may still ruin the files. You can still try to recover it using fail_safe.py, but that is also not a garuntee. 
