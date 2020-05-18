@@ -4,9 +4,7 @@
  pip install Physical2FA```
  
  **Please read the entire file to prevent data loss**
- 
  **Physical2FA currently only supports Windows 7 and newer**
- 
  Physical2FA encrypts and decrypts your files using an external drive.
  
  It can all be done in 2 lines of code, no more wasting time encrypting and decrypting!
@@ -33,11 +31,11 @@
  
  #### Encryption
  
- Physical2FA will encrypt all the files and subdirectories in the directory that you run the program in. However, it will not encrypt the python file in which you run the program in as long as the file is named 'lock.py'. Physical2FA will only encrypt upto 5 subdirectories, but support for more is in development. What this means that if you look at the following model of a sample directory:
+ Physical2FA will encrypt all the files and subdirectories in the directory that you run the program in. However, it will not encrypt the python file in which you run the program in as long as the file is named 'lock.py'. Physical2FA will only encrypt up to 5 subdirectories, but support for more is in development. What this means that if you look at the following model of a sample directory:
  
  ![Encryption_explanation](https://github.com/Atharv2/Physical2FA/blob/master/encryption_explanation.png?raw=true "Image")
  
-Things underlined in green are encrypted. So you can see that files that are nested upto 5 subdirectories are encrypted. 
+Things underlined in green are encrypted. So you can see that files that are nested up to 5 subdirectories are encrypted. 
  
  Here is how to encrypt in steps:
  
@@ -54,7 +52,7 @@ If it is your first time encrypting, you should also import write_key and add 'w
 
 The encryption is as secure as your external drive is!
 #### Decrypt
-To decrypt, you run the same code as encryption, but you replace all instaces of 'encrypt' with 'decrypt'. So it would be:
+To decrypt, you run the same code as encryption, but you replace all instances of 'encrypt' with 'decrypt'. So it would be:
 ```python
 from Physical2FA import decrypt
 
@@ -69,9 +67,9 @@ You can download the file called fail_safe.py from https://github.com/Atharv2/Ph
 + Make sure that your external drive is the letter 'D'. If it does not, go change it. 
 + Take very good care of your external drive. Physical2FA uses a fernet encryption, and there is no way to recover your key if you lose it. Your key is not stored anywhere other than your drive, so if I were you, I would keep a copy of the key on the cloud. 
 + There is a file on https://github.com/Atharv2/Physical2FA called fail_safe.py which will allow you to encrypt or decrypt single files that the regular program may not have encrypted or decrypted. You will still need your external drive plugged in.
-+ I highly recommend that you do not use this to encrypt any important files, although the chances are slim, you may still ruin the files. You can still try to recover it using fail_safe.py, but that is also not a garuntee. 
++ I highly recommend that you do not use this to encrypt any important files, although the chances are slim, you may still ruin the files. You can still try to recover it using fail_safe.py, but that is also not a guarantee. 
 
 ### Disclaimer
-This software does not come with a warranty. I am not responsable if you encrypt some important files and then can't decrypt them. The chances of this happening is very slim, but you should still exercise caution while using this software. I will not be held responsable for any damage that occures from using this software. If you use this program, you understand that You are using it on your own will and you understand the risks. 
+This software does not come with a warranty. I am not responsible if you encrypt some important files and then can't decrypt them. The chances of this happening are very slim, but you should still exercise caution while using this software. I will not be held responsible for any damage that occurs from using this software. If you use this program, you understand that You are using it on your own will and you understand the risks. 
 
 #### Physical2FA is licensed under the GNU Lesser General Public License V.3.0
