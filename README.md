@@ -4,6 +4,7 @@
  pip install Physical2FA```
  
  **Please read the entire file to prevent data loss**
+ 
  **Physical2FA currently only supports Windows 7 and newer**
  Physical2FA encrypts and decrypts your files using an external drive.
  
