@@ -50,6 +50,7 @@ If it is your first time encrypting, you should also import write_key and add 'w
 
 3. Execute the file, and your files/subdirectories should be encrypted.
 
+The encryption is as secure as your external drive is!
 #### Decrypt
 To decrypt, you run the same code as encryption, but you replace all instaces of 'encrypt' with 'decrypt'. So it would be:
 ```python
