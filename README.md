@@ -31,9 +31,11 @@
  
  #### Encryption
  
- Physical2FA will encrypt all the files and subdirectories in the directory that you run the program in. However, it will not encrypt the python file in which you run the program in as long as the file is named 'lock.py'. Physical2FA will only encrypt upto 5 subdirectories, but support for more is in development. What this means that if you look at the following image: INSERT IMAGE HERE. 
+ Physical2FA will encrypt all the files and subdirectories in the directory that you run the program in. However, it will not encrypt the python file in which you run the program in as long as the file is named 'lock.py'. Physical2FA will only encrypt upto 5 subdirectories, but support for more is in development. What this means that if you look at the following model of a sample directory:
  
- EXPLAIN ABOUT IMAGE HERE!
+ ![Encryption_explanation](https://github.com/Atharv2/Physical2FA/blob/master/encryption_explanation.png?raw=true "Image")
+ 
+Things underlined in green are encrypted. So you can see that files that are nested upto 5 subdirectories are encrypted. 
  
  Here is how to encrypt in steps:
  
@@ -64,4 +66,4 @@ You can download the file called fail_safe.py from https://github.com/Atharv2/Ph
 + Make sure that your external drive is the letter 'D'. If it does not, go change it. 
 + Take very good care of your external drive. Physical2FA uses a fernet encryption, and there is no way to recover your key if you lose it. Your key is not stored anywhere other than your drive, so if I were you, I would keep a copy of the key on the cloud. 
 + There is a file on https://github.com/Atharv2/Physical2FA called fail_safe.py which will allow you to encrypt or decrypt single files that the regular program may not have encrypted or decrypted. You will still need your external drive plugged in.
-+I highly recommend that you do not use this to encrypt any important files, although the chances are slim, you may still ruin the files. You can still try to recover it using fail_safe.py, but that is also not a garuntee. 
++ I highly recommend that you do not use this to encrypt any important files, although the chances are slim, you may still ruin the files. You can still try to recover it using fail_safe.py, but that is also not a garuntee. 
