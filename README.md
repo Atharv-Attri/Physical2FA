@@ -75,4 +75,4 @@ You can download the file called fail_safe.py from https://github.com/Atharv2/Ph
 ### Disclaimer
 This software does not come with a warranty. I am not responsible if you encrypt some important files and then can't decrypt them. The chances of this happening are very slim, but you should still exercise caution while using this software. I will not be held responsible for any damage that occurs from using this software. If you use this program, you understand that You are using it on your own will and you understand the risks. 
 
-#### Physical2FA is licensed under the GNU Lesser General Public License V.3.0
+### Physical2FA is licensed under the GNU Lesser General Public License V.3.0
