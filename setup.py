@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Physical2FA",  # Replace with your own username
-    version="0.0.1",
+    version="1.0.1",
     author="Atharv2",
     author_email="atharv260107@gmail.com",
     description="Encryption using 2 Factor Authentication through an external drive.",
@@ -15,8 +15,16 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
         "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Win32 (MS Windows)",
+        "Operating System :: Microsoft :: Windows :: Windows 7",
+        "Operating System :: Microsoft :: Windows :: Windows 8",
+        "Operating System :: Microsoft :: Windows :: Windows 8.1",
+        "Operating System :: Microsoft :: Windows :: Windows 10",
+        "Topic :: Security :: Cryptography",
+        "Topic :: Security",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.0',
 )
