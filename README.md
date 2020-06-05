@@ -1,5 +1,5 @@
 # Physical2FA
- ![logo](https://github.com/Atharv-Attri/Physical2FA/blob/master/Physical2FA.png?raw=true)
+ ![logo](https://github.com/Atharv-Attri/Physical2FA/blob/master/media/Physical2FA.png?raw=true)
  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](#) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](#)
 
 
@@ -10,6 +10,10 @@
  **Physical2FA currently only supports Windows 7 and newer**
  
  Physical2FA encrypts and decrypts your files using an external drive.
+ 
+ ### Usage
+ 
+ ![usage](media/usage.gif)
  
  It can all be done in 2 lines of code, no more wasting time encrypting and decrypting!
  ```python
@@ -37,7 +41,7 @@
  
  Physical2FA will encrypt all the files and subdirectories in the directory that you run the program in. However, it will not encrypt the python file in which you run the program in as long as the file is named 'lock.py'. Physical2FA will only encrypt up to 5 subdirectories, but support for more is in development. What this means that if you look at the following model of a sample directory:
  
- ![Encryption_explanation](https://github.com/Atharv2/Physical2FA/blob/master/encryption_explanation.png?raw=true "Image")
+ ![Encryption_explanation](https://github.com/Atharv-Attri/Physical2FA/blob/master/media/encryption_explanation.png?raw=true)
  
 Things underlined in green are encrypted. So you can see that files that are nested up to 5 subdirectories are encrypted. 
  
