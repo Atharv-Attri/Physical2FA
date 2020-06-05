@@ -3,9 +3,7 @@
  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](#) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](#)
 
 
- Install using ```
- 
- pip install Physical2FA```
+ Install using ```pip install Physical2FA```
  
  **Please read the entire file to prevent data loss**
  
