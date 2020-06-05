@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Physical2FA",  # Replace with your own username
-    version="1.0.1",
+    version="1.1.0",
     author="Atharv2",
     author_email="atharv260107@gmail.com",
     description="Encryption using 2 Factor Authentication through an external drive.",
