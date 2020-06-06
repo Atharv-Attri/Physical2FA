@@ -1,6 +1,6 @@
 # Physical2FA
 ## 2 Factor Authentication using an External drive.
- [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](#) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](#)
+ ![Build](https://img.shields.io/badge/Build-Passing-green)[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](#) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](#)
 ![logo](https://github.com/Atharv-Attri/Physical2FA/blob/master/media/Physical2FA.png?raw=true)
 
  Install using ```pip install Physical2FA```
