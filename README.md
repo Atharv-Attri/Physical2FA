@@ -78,6 +78,8 @@ You can download the file called fail_safe.py from https://github.com/Atharv2/Ph
 + I highly recommend that you do not use this to encrypt any important files, although the chances are slim, you may still ruin the files. You can still try to recover it using fail_safe.py, but that is also not a guarantee. 
 + You cannot import both encrypt and decrypt at the same time. Both of them look for different things, so if the file is decrypted the decrypt module will scan the files and look for the token which does not exist since the file is not encrypted.
 
+#### Remember to :star: this repo!
+
 ### Disclaimer
 This software does not come with a warranty. I am not responsible if you encrypt some important files and then can't decrypt them. The chances of this happening are very slim, but you should still exercise caution while using this software. I will not be held responsible for any damage that occurs from using this software. If you use this program, you understand that You are using it on your own will and you understand the risks. 
 
